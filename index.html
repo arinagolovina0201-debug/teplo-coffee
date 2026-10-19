@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ea">
+  <meta name="description" content="ТЁПЛО — кофейня с хорошим кофе, свежей выпечкой и уютом рядом с домом.">
+  <title>ТЁПЛО — кофе, который рядом</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="ТЁПЛО — на главную">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 5c-7 7-11 13-10 20 1 6 5 10 10 10s9-4 10-10C31 18 27 12 20 5Z"/><path d="M20 12c-1 7-1 14 0 20M15 21c2 1 3 3 4 5m6-10c-2 2-4 4-5 7"/></svg></span>
+      <span class="brand-name">ТЁПЛО<span>кофейня у дома</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Главная навигация">
+      <a href="#home">Главная</a><a href="#menu">Меню</a><a href="#reviews">Отзывы</a><a href="#order">Доставка</a>
+    </nav>
+    <button class="cart-trigger" type="button" aria-label="Открыть корзину">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+      <span class="cart-label">Корзина</span><span class="cart-count" aria-live="polite">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Кофейня у дома · с 2018 года</p>
+        <h1 id="hero-title">Хороший день<br>начинается <em>здесь.</em></h1>
+        <p class="hero-lede">Завариваем кофе с характером, печём с любовью и всегда оставляем место для вашего маленького перерыва.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Выбрать что-нибудь <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">Наша история <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-note"><div class="avatar-stack" aria-hidden="true"><span>А</span><span>М</span><span>Л</span></div><p><strong>Уже 12 000+</strong><br>соседей заходят к нам снова</p><span class="note-star" aria-hidden="true">✳</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1300&q=85" alt="Бариста готовит свежий кофе в кофейне">
+        <div class="hero-sticker"><span>Сварено<br>с теплом</span><b>✳</b></div>
+        <div class="hero-caption"><span>01 / 03</span><span>С любовью к каждому зёрнышку</span></div>
+      </div>
+      <a class="scroll-hint" href="#about"><span>Листайте вниз</span><i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=85" alt="Светлый зал кофейни с местами у окна"><span class="image-tag">Место, где знают<br>ваш любимый заказ</span></div>
+      <div class="about-copy"><p class="eyebrow">Немного о нас</p><h2 id="about-title">Маленькая кофейня.<br><em>Большое сердце.</em></h2><p>Мы открыли ТЁПЛО, чтобы у каждого района было своё место силы. Здесь помнят имена, выбирают зёрна у небольших обжарщиков и достают из печи булочки ровно к вашему утру.</p><p>Загляните на пять минут или задержитесь с книгой — у нас всегда найдётся чашка, которая подходит именно вам.</p><a href="#menu" class="text-link text-link-dark">Заглянуть в меню <span aria-hidden="true">↗</span></a><div class="about-stats"><div><strong>8 лет</strong><span>рядом с вами</span></div><div><strong>100%</strong><span>любви к кофе</span></div><div><strong>08:00</strong><span>открываемся каждый день</span></div></div></div>
+    </section>
+
+    <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading"><div><p class="eyebrow">Вкусное уже ждёт</p><h2 id="menu-title">Что сегодня <em>ваше?</em></h2></div><p>Кофе, паста и завтраки,<br>десерты из нашей кухни.</p></div>
+      <div class="menu-toolbar"><div class="filter-list" role="group" aria-label="Фильтр меню"><button class="filter-chip is-active" data-filter="all" type="button">Всё меню</button><button class="filter-chip" data-filter="drink" type="button">Напитки</button><button class="filter-chip" data-filter="food" type="button">Еда</button></div><span class="menu-hint">Готовим после вашего заказа <span aria-hidden="true">✳</span></span></div>
+      <div class="product-grid">
+        <article class="product-card" data-category="drink"><div class="product-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=82" alt="Чашка эспрессо на столе"><span class="product-number">01</span></div><div class="product-info"><div><h3>Эспрессо</h3><p>Плотный, с нотами шоколада</p></div><button class="add-button" data-name="Эспрессо" data-price="160" type="button" aria-label="Добавить Эспрессо в корзину"><span>160 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="drink"><div class="product-photo"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=82" alt="Капучино с молочной пеной"><span class="product-number">02</span><span class="product-badge">Любимый</span></div><div class="product-info"><div><h3>Капучино</h3><p>Двойной эспрессо и нежная пена</p></div><button class="add-button" data-name="Капучино" data-price="260" type="button" aria-label="Добавить Капучино в корзину"><span>260 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="drink"><div class="product-photo"><img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=82" alt="Латте с узором на молочной пене"><span class="product-number">03</span></div><div class="product-info"><div><h3>Латте «Тёплый»</h3><p>Карамель, эспрессо, много молока</p></div><button class="add-button" data-name="Латте «Тёплый»" data-price="320" type="button" aria-label="Добавить латте в корзину"><span>320 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=82" alt="Свежий золотистый круассан"><span class="product-number">04</span></div><div class="product-info"><div><h3>Круассан</h3><p>Слоёный, сливочный, хрустящий</p></div><button class="add-button" data-name="Круассан" data-price="240" type="button" aria-label="Добавить круассан в корзину"><span>240 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=82" alt="Кусочек домашнего чизкейка"><span class="product-number">05</span><span class="product-badge badge-green">Домашний</span></div><div class="product-info"><div><h3>Чизкейк</h3><p>Нежный крем и ягодный соус</p></div><button class="add-button" data-name="Чизкейк" data-price="390" type="button" aria-label="Добавить чизкейк в корзину"><span>390 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="drink"><div class="product-photo"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=82" alt="Зелёный чай матча с молоком"><span class="product-number">06</span></div><div class="product-info"><div><h3>Матча-латте</h3><p>Японская матча и овсяное молоко</p></div><button class="add-button" data-name="Матча-латте" data-price="340" type="button" aria-label="Добавить матча-латте в корзину"><span>340 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=82" alt="Паста карбонара с тёртым сыром"><span class="product-number">07</span><span class="product-badge">Сытный обед</span></div><div class="product-info"><div><h3>Паста карбонара</h3><p>Бекон, пармезан и сливочный соус</p></div><button class="add-button" data-name="Паста карбонара" data-price="590" type="button" aria-label="Добавить пасту карбонара в корзину"><span>590 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=82" alt="Паста с соусом песто и свежей зеленью"><span class="product-number">08</span></div><div class="product-info"><div><h3>Паста с песто</h3><p>Базилик, кедровый орех, пармезан</p></div><button class="add-button" data-name="Паста с песто" data-price="540" type="button" aria-label="Добавить пасту с песто в корзину"><span>540 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1728078467144-5ceb5226b362?auto=format&fit=crop&w=800&q=85" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?auto=format&fit=crop&w=800&q=85'" alt="Крупный план миски овсяной каши с бананом и ягодами"><span class="product-number">09</span><span class="product-badge badge-green">Завтрак</span></div><div class="product-info"><div><h3>Овсянка «Груша & розмарин»</h3><p>Печёная груша, розмарин, солёная карамель</p></div><button class="add-button" data-name="Овсянка «Груша & розмарин»" data-price="320" type="button" aria-label="Добавить овсянку с грушей и розмарином в корзину"><span>320 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://st.bork.am/recipes/zavtraki/pshennaya-kasha-s-tykvoy/1.jpg" onerror="this.onerror=null;this.src='https://images.news.ru/2025/10/27/DpvkyAYHt6sn6R8ku9SwKi657kRCe5afHao5td9c_780.png'" alt="Крупный план миски пшённой каши с кусочками тыквы"><span class="product-number">10</span><span class="product-badge badge-green">Завтрак</span></div><div class="product-info"><div><h3>Пшёнка «Тыква & кардамон»</h3><p>Кокосовое молоко, тыква, курага</p></div><button class="add-button" data-name="Пшёнка «Тыква & кардамон»" data-price="340" type="button" aria-label="Добавить пшённую кашу с тыквой и кардамоном в корзину"><span>340 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=82" alt="Шоколадный торт с кремом"><span class="product-number">11</span><span class="product-badge">Необычный вкус</span></div><div class="product-info"><div><h3>Брауни с мисо</h3><p>Тёмный шоколад, мисо и морская соль</p></div><button class="add-button" data-name="Брауни с мисо" data-price="360" type="button" aria-label="Добавить брауни с мисо в корзину"><span>360 ₽</span><b>+</b></button></div></article>
+        <article class="product-card" data-category="food"><div class="product-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=82" alt="Сливочный десерт с ягодами и мёдом"><span class="product-number">12</span><span class="product-badge">Необычный вкус</span></div><div class="product-info"><div><h3>Павлова с гречишным мёдом</h3><p>Меренга, крем и лёгкая нота можжевельника</p></div><button class="add-button" data-name="Павлова с гречишным мёдом" data-price="390" type="button" aria-label="Добавить павлову с гречишным мёдом в корзину"><span>390 ₽</span><b>+</b></button></div></article>
+      </div>
+      <div class="menu-footer"><span>Есть вопрос про состав? <a href="#order">Спросите нас</a></span><span>Меню обновляется по сезону <b aria-hidden="true">✳</b></span></div>
+    </section>
+
+    <section class="reviews-section section" id="reviews" aria-labelledby="reviews-title">
+      <div class="reviews-top"><div><p class="eyebrow">Слова, которые греют</p><h2 id="reviews-title">Вы — наше <em>любимое место.</em></h2></div><div class="review-controls"><button class="review-arrow" type="button" data-review-step="-1" aria-label="Предыдущий отзыв">←</button><span class="review-counter"><b id="review-current">01</b> / 03</span><button class="review-arrow" type="button" data-review-step="1" aria-label="Следующий отзыв">→</button></div></div>
+      <div class="review-track" aria-live="polite">
+        <article class="review-card is-current"><div class="review-quote">“</div><p>«Капучино здесь — мой маленький ритуал перед работой. Уже не спрашивают, что мне приготовить. Просто улыбаются. За это особенно люблю ТЁПЛО.»</p><div class="review-author"><span class="review-avatar avatar-one">АК</span><span><strong>Аня К.</strong><small>ходит к нам по будням</small></span><span class="review-stars">★★★★★</span></div></article>
+        <article class="review-card"><div class="review-quote">“</div><p>«Забежали случайно в дождь, а остались на два часа. Очень вкусная выпечка, приятная музыка и ощущение, что ты в гостях у друзей.»</p><div class="review-author"><span class="review-avatar avatar-two">ДМ</span><span><strong>Дима М.</strong><small>заходит всей семьёй</small></span><span class="review-stars">★★★★★</span></div></article>
+        <article class="review-card"><div class="review-quote">“</div><p>«Заказываю доставку в офис, когда дедлайны поджимают. Кофе всегда горячий, круассан ещё тёплый. Вы спасаете мои понедельники!»</p><div class="review-author"><span class="review-avatar avatar-three">ИС</span><span><strong>Ира С.</strong><small>наш сосед по офису</small></span><span class="review-stars">★★★★★</span></div></article>
+      </div>
+      <div class="review-dots" role="group" aria-label="Выбрать отзыв"><button class="is-active" data-review-index="0" type="button" aria-label="Отзыв 1"></button><button data-review-index="1" type="button" aria-label="Отзыв 2"></button><button data-review-index="2" type="button" aria-label="Отзыв 3"></button></div>
+    </section>
+
+    <section class="order-section section" id="order" aria-labelledby="order-title">
+      <div class="order-intro"><p class="eyebrow">Ещё ближе к вашему дню</p><h2 id="order-title">Как вам <em>удобнее?</em></h2><p>Мы уже греем чашки и собираем пакет. Выбирайте — привезём домой или будем ждать вас в кофейне.</p><div class="delivery-promise"><span class="promise-icon">✳</span><span><strong>Бережно и вовремя</strong><small>Доставим по району примерно за 30–45 минут</small></span></div><div class="order-doodle" aria-hidden="true">☕</div></div>
+      <form class="order-card" id="order-form">
+        <div class="order-card-heading"><div><span class="step-label">ВАШ ЗАКАЗ</span><h3>Осталось совсем немного</h3></div><span class="order-spark" aria-hidden="true">✳</span></div>
+        <fieldset class="fulfillment-options"><legend>Получить заказ</legend><label class="fulfillment-choice is-selected"><input type="radio" name="fulfillment" value="delivery" checked><span class="choice-icon">⌂</span><span><strong>Доставка</strong><small>от 30 минут</small></span><i></i></label><label class="fulfillment-choice"><input type="radio" name="fulfillment" value="pickup"><span class="choice-icon">↗</span><span><strong>Самовывоз</strong><small>будет готово за 15 минут</small></span><i></i></label></fieldset>
+        <div class="form-grid"><label class="field-label">Ваше имя<input name="name" type="text" placeholder="Например, Саша" autocomplete="name" required></label><label class="field-label">Телефон<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required></label></div>
+        <label class="field-label address-field">Адрес доставки<input name="address" type="text" placeholder="Улица, дом, квартира" autocomplete="street-address" required></label>
+        <label class="field-label cafe-field" hidden>Кофейня для самовывоза<select name="cafe"><option value="">Выберите кофейню</option><option>ТЁПЛО на Лесной, 8</option><option>ТЁПЛО на Мира, 21</option></select></label>
+        <div class="order-summary"><span>Сумма заказа</span><strong id="order-total">0 ₽</strong></div>
+        <button class="button button-dark order-submit" type="submit">Оформить заказ <span aria-hidden="true">↗</span></button>
+        <p class="form-footnote">Демо-форма: заказ пока не отправляется в кофейню.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 5c-7 7-11 13-10 20 1 6 5 10 10 10s9-4 10-10C31 18 27 12 20 5Z"/><path d="M20 12c-1 7-1 14 0 20M15 21c2 1 3 3 4 5m6-10c-2 2-4 4-5 7"/></svg></span><span class="brand-name">ТЁПЛО<span>кофейня у дома</span></span></a><p>Пусть день будет добрым.<br>А кофе — тёплым.</p><div class="footer-links"><a href="#menu">Меню</a><a href="#reviews">Отзывы</a><a href="#order">Заказать</a></div><span class="copyright">© ТЁПЛО, 2026</span></footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <div class="drawer-backdrop"></div>
+  <aside class="cart-drawer" aria-label="Корзина" aria-hidden="true"><div class="drawer-head"><div><span class="step-label">ВАШ ВЫБОР</span><h2>Корзина</h2></div><button class="drawer-close" type="button" aria-label="Закрыть корзину">×</button></div><div class="cart-items"></div><div class="cart-empty"><span>☕</span><p>Здесь пока пусто.<br>Выберите что-нибудь вкусное в меню.</p><a class="button button-dark" href="#menu">К меню <span aria-hidden="true">↗</span></a></div><div class="drawer-bottom"><div><span>Итого</span><strong class="drawer-total">0 ₽</strong></div><a class="button button-dark drawer-checkout" href="#order">Перейти к заказу <span aria-hidden="true">↗</span></a></div></aside>
+</body>
+</html>
